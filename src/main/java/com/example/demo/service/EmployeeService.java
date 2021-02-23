@@ -38,7 +38,7 @@ public class EmployeeService{
 
 	public String updateEmployee(Employee employee) {
 		mongoTemplate.save(employee);
-		return "Employee details "+ employee.getName()+" updated in the database.";
+		return "Employee "+ employee.getName()+" details updated in the database.";
 	}
 
 	public String deleteEmployee(int id) {
